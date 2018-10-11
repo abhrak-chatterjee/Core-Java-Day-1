@@ -6,7 +6,7 @@ package com.capgemini.bank;
  * @since 03-10-2018
  */
 
-public abstract class BankAccount 
+public abstract class BankAccount implements Comparable<BankAccount>
 {
 	public int accountNo;
 	public String accountHolderName;
@@ -56,11 +56,17 @@ public abstract class BankAccount
 
 	public abstract void isSalaryAccount();
 
-	/*@Override
+	@Override
 	public String toString() {
 		return " [accountNo=" + accountNo + ", accountHolderName=" + accountHolderName + ", accountBalance="
 				+ accountBalance + "]";
-	}*/
+	}
+
+	@Override
+	public int compareTo(BankAccount account) 
+	{
+		return account.getAccountNo() - getAccountNo();
+	}
 	
 	
 }
