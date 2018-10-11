@@ -9,3 +9,11 @@ Implementation of Interface: com.capgemini.policy.PolicyDetails.java
 
 Creating of new version of Savings Account and Current Account classes
 Implementing the interface Policy Details in the newer version of the classes
+
+
+****UPDATE****
+
+Implemented all collections:
+-arraylist
+-hashmap
+-treeset
